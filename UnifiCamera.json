@@ -1,33 +1,50 @@
 {
-        "MQTT_Subscribe":
-        [
-                {
-                "Rec":
-                        [
-                                {
-                                        "MQTT": "openhab/in/Bedroom3Heater/Temp",
-                                        "data":
-                                        [
-                                                {
-                                                "CameraID": "xx",
-                                                "CameraName": "xxx",
-                                                "CameraTag": "xxxx"
-                                                }
-                                        ]
-                                },
+	"Config":
+	[
+		{
+			"Host" : 				"unifi:7080",
+			"API_Key" : 			"xxx",
+			"MQTT_Broker" : 		"192.168.1.25",
+			"MQTT_Name" : 			"UnifiTesting",
+			"MQTT_Subscription" : 	"openhab/in/#",
+			"MQTT_ForceReconnect" : "3600",
+			"FailureRestart" : 		"10"
+		}
+	],
+	"MQTT_Subscribe": 
+	[
+		{
+		"Rec":
+			[
+				{
+					"MQTT": "openhab/in/Bedroom2Heater/Temp",
+					"data":
+					[
+						{
+						"CameraID": "xxx",
+						"CameraName": "xxx",
+						"CameraTag": "xxx",
+						"CameraTagPrefix" : " (",
+						"CameraTagPostfix" : "c)"
+						}
+					]
+				},
 
-                                {
-                                        "MQTT": "openhab/in/Garage/Temp",
-                                        "data":
-                                        [
-                                                {
-                                                "CameraID": "yy",
-                                                "CameraName": "yyyy",
-                                                "CameraTag": "yyyyy"
-                                                }
-                                        ]
-                                }
-                        ]
-                }
-        ]
+				{
+					"MQTT": "openhab/in/GarageStereo/Temp",
+					"data":
+					[
+						{
+						"CameraID": "xxx",
+						"CameraName": "xxx",
+						"CameraTag": "xxx",
+						"CameraTagPrefix" : " (",
+						"CameraTagPostfix" : "c)"
+						}
+					]
+				}
+				
+			]
+		}
+	]
 }
