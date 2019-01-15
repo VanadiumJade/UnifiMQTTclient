@@ -1,0 +1,33 @@
+{
+        "MQTT_Subscribe":
+        [
+                {
+                "Rec":
+                        [
+                                {
+                                        "MQTT": "openhab/in/Bedroom3Heater/Temp",
+                                        "data":
+                                        [
+                                                {
+                                                "CameraID": "xx",
+                                                "CameraName": "xxx",
+                                                "CameraTag": "xxxx"
+                                                }
+                                        ]
+                                },
+
+                                {
+                                        "MQTT": "openhab/in/Garage/Temp",
+                                        "data":
+                                        [
+                                                {
+                                                "CameraID": "yy",
+                                                "CameraName": "yyyy",
+                                                "CameraTag": "yyyyy"
+                                                }
+                                        ]
+                                }
+                        ]
+                }
+        ]
+}
